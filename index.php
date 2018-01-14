@@ -11,7 +11,7 @@ class encryption_decryption {
 
 		for ($i = 0; $i < strlen($in); $i++)
 		{
-			$encrypt ? $out .= ( $in[$i] ^ $this->key[ $i % strlen($this->key) ] ) << 2 
+			$encrypt ? $out .= ( $in[$i] ^ $this->key[ $i % strlen($this->key) ] )
 					 : $out .= ( $in[$i] ^ $this->key[ $i % strlen($this->key) ] );
 		}
 		
